@@ -1,5 +1,5 @@
 body{
-    background-image: url("Portfolio/img/fundo.png");
+    background-image: url("../img/fundo.png");
     margin: 0;
     padding: 0;
 }
@@ -48,4 +48,42 @@ body{
 
 .navegar li {
     padding: 0 15px;
+}
+
+/*MENU SUSPENSO*/
+.mainmenubtn {
+    background-color: rgb(12, 73, 240);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.mainmenubtn:hover {
+    background-color: blue;
+}
+
+.dropdown {
+    position: relative;
+    top: 5px;
+    left: 1150px;
+    display: inline-block;
+}
+
+.dropdown-child {
+    display: none;
+    background-color: rgb(12, 73, 240);
+    min-width: 200px;
+}
+
+.dropdown-child a {
+    color: blue;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;
 }
