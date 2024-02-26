@@ -1,12 +1,51 @@
-.titulo{
+body{
+    background-image: url("Portfolio/img/fundo.png");
+    margin: 0;
+    padding: 0;
+}
+.titulo {
     font-size: 100px;
     color: white;
     text-align: center;
 }
-.sub-titulo{
 
-}
-.fonte{
+.sub-titulo {}
+
+.fonte {
     font-style: calibri;
+    font-size: 30px;
     color: white
+}
+
+.caixa-texto {
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 105px;
+    position: relative;
+}
+
+/*BOTOES*/
+.site-header, .site-footer {
+    background-color: blue;
+    height: 2vh;
+    width: 100vw;
+}
+
+.navegar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.navegar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navegar li {
+    padding: 0 15px;
 }
