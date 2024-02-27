@@ -1,18 +1,27 @@
+/*CORPO*/
 body{
-    background-image: url("../img/fundo.png");
     margin: 0;
     padding: 0;
+}
+
+img{
+    width: 100px;
+    border-radius: 70px;
+    display: inline-block;
+    margin: 0;
+    
 }
 .titulo {
     font-size: 100px;
     color: white;
     text-align: center;
+    margin: 0;
 }
 
 .sub-titulo {}
 
 .fonte {
-    font-style: calibri;
+    font-style: arial;
     font-size: 30px;
     color: white
 }
@@ -28,22 +37,28 @@ body{
     position: relative;
 }
 
-/*BOTOES*/
-.site-header, .site-footer {
-    background-color: blue;
-    height: 2vh;
-    width: 100vw;
+.site-header {
+    background-color: black;
 }
 
+.site-main {
+    background-color: black;
+}
+
+.site-footer {}
+
+/*BOTOES*/
 .navegar ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
+    margin: 0;
 }
 
 .navegar a {
     color: white;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .navegar li {
@@ -57,7 +72,6 @@ body{
     border: none;
     cursor: pointer;
     padding: 10px;
-    margin-top: 10px;
 }
 
 .mainmenubtn:hover {
@@ -66,8 +80,6 @@ body{
 
 .dropdown {
     position: relative;
-    top: 5px;
-    left: 1150px;
     display: inline-block;
 }
 
@@ -78,7 +90,7 @@ body{
 }
 
 .dropdown-child a {
-    color: blue;
+    color: white;
     padding: 20px;
     text-decoration: none;
     display: block;
