@@ -1,38 +1,73 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilo.css" rel="stylesheet" />
     <title>Portfólio Eduardo</title>
-    <link rel="stylesheet" href="css/estilo.css">
-
-    
 </head>
 
 <body>
+
     <header class="site-header">
-        <nav class="navegar">
-            <ul>
-                <li><a href="#sobre-mim">Sobre Mim </a></li>
-                <li><a href="#projetos">Projetos </a></li>
-                <li><a href="#contato">Contatos </a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="#sobre mim">Sobre mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#contado">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
     </header>
-    <main class="site-main">
-
-        <div>
-            <img src="img/perfil.jpg" class="img-perfil">
-        </div>
-
-        <h1 class="titulo">Sobre mim</h1>
-        <div class="caixa-texto">
-            <p class="fonte">Olá me chamo Eduardo comecei a cursar o curso de Engenharia de Software no IFPR (Instituto
-                Federal do Paraná) no ano de 2022, atualmente estou no 3° do curso, estou criando este Portfólio para um
+    <main class="container">
+        <section class="clearfix">
+            <img class="container-img" src="Img/perfil.jpg" alt="Minha foto!" />
+            <h2>Sobre mim</h2>
+            <p>Olá me chamo Eduardo comecei a cursar o curso de Engenharia de Software no IFPR (Instituto
+                Federal do Paraná) no ano de 2022, atualmente estou no 3° do curso, estou criando este Portfólio
+                para um
                 registro do meu progresso bem como o cumprimento da matera de PW (Programação Web).</p>
-            <p class="fonte">Atualmente trabalho na empresa de telecomunicação Solução Network onde completei 2 anos de
-                empresa, comecei a trabalhar no cargo de Suporte Técnico onde atuei por mais de 1 ano, atualmente estou 
+            <p>Atualmente trabalho na empresa de telecomunicação Solução Network onde completei 2 anos de
+                empresa, comecei a trabalhar no cargo de Suporte Técnico onde atuei por mais de 1 ano, atualmente
+                estou
                 no controle de material de circulação da empresa.</p>
-        </div>
+        </section>
+
+        <section>
+
+            <h2>Projetos Desenvolvidos</h2>
+            <div class="project-grid">
+                <article class="project-item">
+                    <img src="Img/image.jpg" />
+                    <div class="project-info">
+                        <h3>Projeto comercial</h3>
+                        <p>Descricao</p>
+                    </div>
+                </article>
+                <article class="project-item">
+                    <img src="Img/image.jpg" />
+                    <div class="project-info">
+                        <h3>Projeto comercial</h3>
+                        <p>Descricao</p>
+                    </div>
+                </article>
+                <article class="project-item">
+                    <img src="Img/image.jpg" />
+                    <div class="project-info">
+                        <h3>Projeto comercial</h3>
+                        <p>Descricao</p>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+
     </main>
+
     <footer class="site-footer">
 
     </footer>
