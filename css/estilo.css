@@ -8,35 +8,12 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: black;
-    color: #eee;
-}
-
-.site-header,
-.site-footer {
-    background-color: #5d547a;
+    background-color: rgb(32, 66, 41);
     color: black;
-    padding: 0 20px;
 }
 
-.main-navigation ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-
-}
-
-.section{
-    padiding: 50px 0;
-}
-
-.main-navigation a {
-    color: black;
-    text-decoration: none;
-}
-
-.main-navigation li {
-    padding: 0 15px;
+h1{
+    padding: 15px;
 }
 
 .container {
@@ -45,7 +22,99 @@ body {
     margin: auto;
 }
 
+.site-header, .site-footer {
+    background-color: #4eaf63;
+    color: rgb(0, 0, 0);
+    padding: 0 30px;
+}
+
+.main-navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.main-navigation a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.main-navigation li {
+    margin: 0 15px;
+}
+
+.section{
+    padiding: 50px 0;
+}
+
+.profile-pic {
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.project-grid {
+    padding: 50px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project-item {
+    background-color: #4eaf63;
+    box-shadow: 0 0 10px rgba(150, 132, 132, 0.1);
+}
+
+.project-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-bottom: 3px solid;
+}
+
+.project-info {
+    padding: 10px;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info a {
+    display: inline-block;
+    background-color: #5d547a;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.contact-info a {
+    display: inline-block;
+    background-color: #5d547a;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.contact-info a:hover {
+    background-color: #4b4171;
+}
+
+.main-navigation li {
+    padding: 0 15px;
+}
+
 .container-img {
+    padding: 25px;
     float: left;
     width: 200px;
     height: 200px;
@@ -62,32 +131,8 @@ body {
     display: table;
 }
 
-.project-grid {
-    padding: 50px;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.project-item {
-    background-color: blue;
-    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
-    transition: box-shadow var(--trasition-speed);
-}
-
 .project-item:houver{
     box-shadow: 0 0 15px #383838;
-}
-
-.project-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: contain;
-    border-bottom: 3px solid;
-}
-
-.project-info {
-    padding: 10px;
 }
 
 @media screen and (max-with: 768px){
@@ -110,9 +155,3 @@ body {
     to{opacity: 1;}
     
 }
-
-/*@keyframes fadeIn {
-    0%{background-color: red;}
-    50%{background-color: blue;}
-    100%{background-color: green;}
-}*/
