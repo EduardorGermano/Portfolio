@@ -16,7 +16,7 @@ h1{
     padding: 15px;
 }
 
-.container {
+.container-index {
     max-width: 1200px;
     padding: 0 20px;
     margin: auto;
@@ -41,10 +41,12 @@ h1{
 .main-navigation a {
     color: rgb(0, 0, 0);
     text-decoration: none;
+    transition: background-color 0.3s;
 }
 
-.section{
-    padiding: 50px 0;
+.main-navigation a:hover {
+    background-color: #5d547a;
+    border-radius: 3px;
 }
 
 .profile-pic {
@@ -63,37 +65,8 @@ h1{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.project-item {
-    background-color: #4eaf63;
-    box-shadow: 0 0 10px rgba(150, 132, 132, 0.1);
-}
-
-.project-item img {
-    height: 200px;
-    /*object-fit: contain;*/
-    border-bottom: 3px solid;
-}
-
-.project-info {
-    padding: 10px;
-}
-
-.contact-info {
+.contact-info a {
     margin-top: 1px;
-}
-
-.contact-info a {
-    display: inline-block;
-    background-color: #5d547a;
-    color: white;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.contact-info a {
     display: inline-block;
     background-color: #5d547a;
     color: white;
@@ -105,7 +78,7 @@ h1{
 }
 
 .contact-info a:hover {
-    background-color: #4b4171;
+    background-color: #c5bce4;
 }
 
 .main-navigation li {
@@ -130,8 +103,30 @@ h1{
     display: table;
 }
 
-.project-item:houver{
+.container {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+}
+
+.card-container {
+    border-bottom: 3px solid;
+    background-color: #4eaf63;
+    padding: 10px;
+    margin: 25px;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    width: 90%;
     box-shadow: 0 0 15px #383838;
+    transition: background-color 0,3s;
+}
+
+.card-container :hover {
+    background-color: #2f7e40;
 }
 
 @media screen and (max-with: 768px){
