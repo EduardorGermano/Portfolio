@@ -95,12 +95,15 @@ h1{
     margin-right: 20px;
     animation: fadeIn 2s ease-in-out;
 }
-
-.clearfix::after {
+.container-img2 {
     padding: 25px;
-    content: "";
-    clear: both;
-    display: table;
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .container {
@@ -110,6 +113,7 @@ h1{
     flex-direction: column;
     justify-content: space-evenly;
     margin: 3rem 0;
+    transition: background-color 0, 3s;
 }
 
 .card-container {
@@ -122,11 +126,17 @@ h1{
     align-items: center;
     width: 90%;
     box-shadow: 0 0 15px #383838;
-    transition: background-color 0,3s;
 }
 
-.card-container :hover {
+.container :hover {
     background-color: #2f7e40;
+}
+
+.clearfix::after {
+    padding: 25px;
+    content: "";
+    clear: both;
+    display: table;
 }
 
 @media screen and (max-with: 768px){
